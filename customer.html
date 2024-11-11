@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Reviews</title>
+</head>
+<body>
+    
+  <header class="header">
+    <div class="container">
+        <h1 class="logo"><svg style="margin-right: 10px; position : relative ; top : 3px;" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-bus-front-fill" viewBox="0 0 16 16">
+            <path d="M16 7a1 1 0 0 1-1 1v3.5c0 .818-.393 1.544-1 2v2a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5V14H5v1.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-2a2.5 2.5 0 0 1-1-2V8a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1V2.64C1 1.452 1.845.408 3.064.268A44 44 0 0 1 8 0c2.1 0 3.792.136 4.936.268C14.155.408 15 1.452 15 2.64V4a1 1 0 0 1 1 1zM3.552 3.22A43 43 0 0 1 8 3c1.837 0 3.353.107 4.448.22a.5.5 0 0 0 .104-.994A44 44 0 0 0 8 2c-1.876 0-3.426.109-4.552.226a.5.5 0 1 0 .104.994M8 4c-1.876 0-3.426.109-4.552.226A.5.5 0 0 0 3 4.723v3.554a.5.5 0 0 0 .448.497C4.574 8.891 6.124 9 8 9s3.426-.109 4.552-.226A.5.5 0 0 0 13 8.277V4.723a.5.5 0 0 0-.448-.497A44 44 0 0 0 8 4m-3 7a1 1 0 1 0-2 0 1 1 0 0 0 2 0m8 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0m-7 0a1 1 0 0 0 1 1h2a1 1 0 1 0 0-2H7a1 1 0 0 0-1 1"/>
+          </svg>BusTrack</h1>
+        <nav class="navbar">
+            <div class="nav-links" id="nav-links">
+                <a href="./index.html" class="nav-link">Home</a>
+                <a href="./customer.html" class="nav-link">Reviews</a>
+                <a href="./values.html" class="nav-link">Values</a>
+                <a href="./Schedule.html" class="nav-link">Schedule</a>
+                <a href="./Timetable.html" class="nav-link">Timetable</a>
+                <a href="./Contact.html" class="nav-link">Contact</a>
+                <button class="quote-button" onclick="window.location.href='Quote.html'" >Request A Quote</button>
+            </div>
+            <button class="burger" onclick="toggleMenu()">☰</button>
+        </nav>
+    </div>
+  </header> 
+
+    <section class="values">
+        <h2 style="text-align: center; font-size: 40px; color: white; letter-spacing: 1px; margin-bottom: 10px;">Customer Reviews</h2>
+        <div class="values-container">
+            <div class="testimonial-card">
+                <div class="quote-icon">“</div>
+                <p class="testimonial-text">
+                  BusTrack offers an amazing experience! It’s reliable, comfortable, and always on time.
+                </p>
+                <div class="stars">★★★★★</div>
+                <div class="user-info">
+                  JOHN DOE
+                  <span>Business Analyst</span>
+                </div>
+              </div>
+            
+              <div class="testimonial-card">
+                <div class="quote-icon">“</div>
+                <p class="testimonial-text">
+                  I can’t imagine my daily commute without BusTrack. The service is exceptional, and the drivers are friendly!
+                </p>
+                <div class="stars">★★★★★</div>
+                <div class="user-info">
+                  SARAH LEE
+                  <span>Software Engineer</span>
+                </div>
+              </div>
+            
+              <div class="testimonial-card">
+                <div class="quote-icon">“</div>
+                <p class="testimonial-text">
+                  The best bus service I’ve ever used! BusTrack is punctual, clean, and very convenient for city travel.
+                </p>
+                <div class="stars">★★★★★</div>
+                <div class="user-info">
+                  MICHAEL BROWN
+                  <span>Graphic Designer</span>
+                </div>
+              </div>
+            
+              <div class="testimonial-card">
+                <div class="quote-icon">“</div>
+                <p class="testimonial-text">
+                  BusTrack keeps me on schedule every day. Love the easy booking system and comfortable seats!
+                </p>
+                <div class="stars">★★★★★</div>
+                <div class="user-info">
+                  LISA WHITE
+                  <span>Marketing Specialist</span>
+                </div>
+              </div>
+            
+              <div class="testimonial-card">
+                <div class="quote-icon">“</div>
+                <p class="testimonial-text">
+                  A truly wonderful experience. BusTrack is dependable and perfect for my long-distance travels.
+                </p>
+                <div class="stars">★★★★★</div>
+                <div class="user-info">
+                  DAVID WILSON
+                  <span>Sales Executive</span>
+                </div>
+              </div>
+            
+              <div class="testimonial-card">
+                <div class="quote-icon">“</div>
+                <p class="testimonial-text">
+                  Highly recommended! BusTrack has made my daily commute stress-free. The buses are always clean and comfortable.
+                </p>
+                <div class="stars">★★★★★</div>
+                <div class="user-info">
+                  EMILY JOHNSON
+                  <span>Project Manager</span>
+                </div>
+              </div>
+        </div>
+    </section>
+    
+    <script>
+    function toggleMenu() {
+        const navLinks = document.getElementById("nav-links");
+        navLinks.classList.toggle("open");
+    }
+    </script>
+
+</body>
+</html>

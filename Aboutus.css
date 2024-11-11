@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.aboutUs-Section {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 20px;
+    width: 100vw;
+    box-sizing: border-box;
+}
+
+.aboutUs-Img {
+    text-align: center;
+    background-image: url('./bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: black;
+    font-size: 28px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    padding: 15vh 0px;
+}
+
+.aboutUs-Text {
+    color: #1b1b1b;
+    text-align: center;
+    letter-spacing: 1px;
+    background-color: white;
+    border-radius: 24px;
+    animation: fadeInUp 1.5s ease;
+    padding: 4vh 20px;
+    margin: 0 auto;
+    
+    width: calc(100vw - 40px); /* Ensures width is responsive with a margin */
+}
+
+.aboutUs-Text > * {
+    margin: 5px 0px;
+}
+
+.aboutUs-Text > h2 {
+    color: #D32F2F;
+    font-size: 28px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .aboutUs-Section {
+        gap: 30px;
+        padding: 15px;
+    }
+
+    .aboutUs-Img {
+        font-size: 24px;
+        padding: 12vh 0px;
+    }
+
+    .aboutUs-Text {
+        padding: 3vh 15px;
+        font-size: 0.9em;
+        width: calc(100vw - 30px); /* Adjusts width to leave more margin */
+    }
+
+    .aboutUs-Text > h2 {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .aboutUs-Img {
+        font-size: 20px;
+        padding: 10vh 0px;
+    }
+
+    .aboutUs-Text {
+        padding: 2vh 10px;
+        font-size: 0.85em;
+        width: calc(100vw - 20px); /* Leaves larger margins on smaller screens */
+    }
+
+    .aboutUs-Text > h2 {
+        font-size: 20px;
+    }
+}

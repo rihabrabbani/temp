@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">   
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="logo"><svg style="margin-right: 10px; position : relative ; top : 3px;" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-bus-front-fill" viewBox="0 0 16 16">
+                <path d="M16 7a1 1 0 0 1-1 1v3.5c0 .818-.393 1.544-1 2v2a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5V14H5v1.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-2a2.5 2.5 0 0 1-1-2V8a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1V2.64C1 1.452 1.845.408 3.064.268A44 44 0 0 1 8 0c2.1 0 3.792.136 4.936.268C14.155.408 15 1.452 15 2.64V4a1 1 0 0 1 1 1zM3.552 3.22A43 43 0 0 1 8 3c1.837 0 3.353.107 4.448.22a.5.5 0 0 0 .104-.994A44 44 0 0 0 8 2c-1.876 0-3.426.109-4.552.226a.5.5 0 1 0 .104.994M8 4c-1.876 0-3.426.109-4.552.226A.5.5 0 0 0 3 4.723v3.554a.5.5 0 0 0 .448.497C4.574 8.891 6.124 9 8 9s3.426-.109 4.552-.226A.5.5 0 0 0 13 8.277V4.723a.5.5 0 0 0-.448-.497A44 44 0 0 0 8 4m-3 7a1 1 0 1 0-2 0 1 1 0 0 0 2 0m8 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0m-7 0a1 1 0 0 0 1 1h2a1 1 0 1 0 0-2H7a1 1 0 0 0-1 1"/>
+              </svg>BusTrack</h1>
+            <nav class="navbar">
+                <div class="nav-links" id="nav-links">
+                    <a href="./index.html" class="nav-link">Home</a>
+                    <a href="./customer.html" class="nav-link">Reviews</a>
+                    <a href="./values.html" class="nav-link">Values</a>
+                    <a href="./Schedule.html" class="nav-link">Schedule</a>
+                    <a href="./Timetable.html" class="nav-link">Timetable</a>
+                    <a href="./Contact.html" class="nav-link">Contact</a>
+                    <button class="quote-button" onclick="window.location.href='Quote.html'" >Request A Quote</button>
+                </div>
+                <button class="burger" onclick="toggleMenu()">☰</button>
+            </nav>
+        </div>
+    </header>    
+
+    <section class="Quote">
+        <div class="Quote__container">
+            <h1 class="Quote__title">Bus Timetable</h1>
+            <p class="Quote__description">
+                Check the schedule and timetable for buses across popular routes in Muscat, Oman.
+            </p>
+            <div class="Quote__form" style="display: flex; flex-direction: column; gap: 10px;">
+                <table class="Quote__table">
+                    <thead>
+                        <tr>
+                            <th>Route</th>
+                            <th>Departure Time</th>
+                            <th>Arrival Time</th>
+                            <th>Frequency</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Seeb to Ruwi</td>
+                            <td>08:00 AM</td>
+                            <td>08:45 AM</td>
+                            <td>Every 30 mins</td>
+                        </tr>
+                        <tr>
+                            <td>Ruwi to Al Khuwair</td>
+                            <td>09:00 AM</td>
+                            <td>09:30 AM</td>
+                            <td>Every 45 mins</td>
+                        </tr>
+                        <tr>
+                            <td>Bawshar to Seeb</td>
+                            <td>10:00 AM</td>
+                            <td>10:40 AM</td>
+                            <td>Hourly</td>
+                        </tr>
+                        <tr>
+                            <td>Al Khuwair to Bawshar</td>
+                            <td>11:00 AM</td>
+                            <td>11:30 AM</td>
+                            <td>Every 30 mins</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+    
+</body>
+<script>
+    function toggleMenu() {
+        const navLinks = document.getElementById("nav-links");
+        navLinks.classList.toggle("open");
+    }
+    </script>
+</html>
